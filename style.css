@@ -18,8 +18,8 @@
     width: 12vw;
 }
 
-.sidebar a {
-    padding-left: 8%;
+.sidebar-content {
+    padding-top: 10px;
 }
 
 .sidebar-header {
@@ -29,6 +29,10 @@
 .sidebar li {
     font-size: large;
     margin-top: 15%;
+}
+
+.sidebar a {
+    padding-left: 8%;
 }
 
 .header {
@@ -47,4 +51,52 @@
     background-color: rgb(130, 133, 146);
     height: 95vh;
     width: 88vw
+}
+
+.calculation-modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.device-panel {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 4vh;
+    width: 80vw;
+}
+
+.device-panel-list {
+    display: flex;
+    gap: 10px;
+}
+
+.device-panel-list button {
+    background-color: rgb(214, 214, 214);
+    color: black;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-top: 4px;
+}
+
+.device-panel-list button:hover {
+    background-color: rgb(223, 222, 222);
+}
+
+.selected-devices {
+    display: flex;
+    gap: 20px;
+}
+
+.device {
+    background-color: white;
+    border-radius: 8%;
+    height: 20vh;
+    width: 15vw;
+    margin-top: 20px;
 }
