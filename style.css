@@ -5,7 +5,6 @@
     font-weight: 600;
     list-style: none;
     text-decoration: none;
-    color: white;
 }
 
 .container {
@@ -16,6 +15,10 @@
     background-color:rgb(88, 90, 99);
     height: 100vh;
     width: 12vw;
+}
+
+.sidebar a {
+    color: white;
 }
 
 .sidebar-content {
@@ -42,6 +45,7 @@
 }
 
 .content-header {
+    color: white;
     font-size: xx-large;
     padding-top: 0.5%;
     padding-left: 2%;
@@ -88,13 +92,102 @@
     background-color: rgb(223, 222, 222);
 }
 
-.shadow-background {
-    background-color: rgba(0,0,0,0.5);
+#modal-light {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 290px;
+    padding-left: 10px;
+    padding-top: 10px;
+    z-index: 101;
+}
+
+.button-close-line {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.button-close {
+    color: black;
+    border-style: none;
+    border-radius: 30%;
+    height: 20px;
+    width: 20px;
+}
+
+.button-close:hover {
+    background-color: rgb(223, 222, 222);
+    border: 2px solid black;
+}
+
+.modal-light-type {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.modal-light-select {
+    font-weight: 650;
+    appearance: none;
+    padding: 2px 7px;
+}
+
+.modal-light-select:hover {
+    background-color: rgb(223, 222, 222);
+    border: 2px solid black;
+}
+
+.modal-light-parameters {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.button-counting {
+    background-color: rgb(214, 214, 214);
+    color: black;
+    border-style: none;
+    border-radius: 30%;
+    height: 20px;
+    width: 20px;
+}
+
+.button-counting:hover {
+    background-color: rgb(223, 222, 222);
+    border: 2px solid black;
+}
+
+#button-create-modal-light {
+    margin-top: 15px;
+}
+
+.button-create {
+    background-color: rgb(214, 214, 214);
+    color: black;
+    border-style: none;
+    border-radius: 6px;
+    height: 25px;
+    width: 75px;
+}
+
+.button-create:hover {
+    background-color: rgb(223, 222, 222);
+    border: 2px solid black;
+}
+
+#shadow-background {
+    background-color: rgba(0,0,0,0.6);
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 100;
 }
 
 .selected-devices {
@@ -119,6 +212,11 @@
     padding-left: 15px;
 }
 
+.device li{
+    display: flex;
+    gap: 5px;
+}
+
 .device-info {
     display: flex;
     align-items: center;
@@ -129,27 +227,4 @@
     height: 70px;
     width: 70px;
     border-radius: 10px;
-}
-
-.device-details li{
-    display: flex;
-    gap: 5px;
-}
-
-.device-details button {
-    background-color: rgb(214, 214, 214);
-    color: black;
-    border-style: none;
-    border-radius: 30%;
-    height: 20px;
-    width: 20px;
-}
-
-.device-details button:hover {
-    background-color: rgb(223, 222, 222);
-}
-
-.device-result li {
-    display: flex;
-    gap: 5px;
 }

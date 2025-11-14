@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- Бокова панель -->
         <aside class="sidebar">
             <div class="sidebar-content"><a href="#" class="sidebar-header">Елементи</a>
                 <ul>
@@ -18,45 +19,64 @@
                 </ul>
             </div>
         </aside>
+        <!-- Основна сторінка -->
         <div class="content">
-            <header class="header"><a href="#" class="content-header">SVIT Helper</a>
-
+            <!-- Хедер -->
+            <header class="header">
+                <a href="#" class="content-header">SVIT Helper</a>
             </header>
+            <!-- Робоча зона -->
             <main class="main">
+                <!-- Розділ розрахунку модулів -->
                 <div class="calculation-modules">
+                    <!-- Панель додавання елементів -->
                     <div class="device-panel">
                         <ul class="device-panel-list">
-                            <li><button class="light">L</button></li>
-                            <li><button class="switch">S</button></li>
+                            <li><button id="button-add-light">L</button></li>
+                            <li><button id="button-add-switch">S</button></li>
                         </ul>
                     </div>
+                    <!-- Модальні вікна -->
                     <div class="modal-windows">
-                        <div class="modal-window-light" style="display: none;">
-                            <div>
+                        <!-- Модальне вікно для освітлення -->
+                        <div id="modal-light" style="display: none;">
+                            <div class="button-close-line"><button id="button-close-modal-light" class="button-close">X</button></div>
+                            <div class="modal-light-type">
                                 <p>Освітлення:</p>
-                                <a href="#">Оберіть тип освітлення</a>
+                                <select id="modal-light-select" class="modal-light-select">
+                                    <option selected class="selected">Оберіть тип освітлення</option>
+                                    <option>Лампа</option>
+                                    <option>Торшер</option>
+                                    <option>Бра</option>
+                                    <option>Трековий світильник</option>
+                                    <option>LED</option>
+                                </select>
                             </div>
-                            <ul>
-                                <li>Лампа</li>
-                                <li>Торшер</li>
-                                <li>Бра</li>
-                                <li>Трековий світильник</li>
-                                <li>LED</li>
-                            </ul>
+                            <div class="modal-light-parameters">
+                                <p>К-сть виходів:</p>
+                                <button id="button-counting-minus-modal-light" class="button-counting">-</button>
+                                <p id="modal-light-count-outputs">1</p>
+                                <button id="button-counting-plus-modal-light" class="button-counting">+</button>
+                            </div>
+                            <button id="button-create-modal-light" class="button-create">Створити</button>
                         </div>
                     </div>
-                    <div class="shadow-background" style="display: none;"></div>
-                    <div class="selected-devices">
+                    <!-- Елемент для затемнення сторінки -->
+                    <div id="shadow-background" style="display: none;"></div>
+                    <!-- Обрані елементи -->
+                    <div id="selected-devices" class="selected-devices">
+                        <!-- Екземпляр елемента -->
                         <div class="device">
                             <p class="device-name">Лампа</p>
+                            <!-- Основна інформація -->
                             <div class="device-info">
                                 <img class="device-img" src="img/lamp.png">
                                 <ul class="device-details">
                                     <li>
                                         <p>Кількість:</p>
-                                        <button class="device-button-minus">-</button>
+                                        <button class="button-counting">-</button>
                                         <p>5</p>
-                                        <button class="device-button-plus">+</button>
+                                        <button class="button-counting">+</button>
                                     </li>
                                     <li>
                                         <p>Тип виходів:</p>
@@ -68,6 +88,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- Результуюча інформація -->
                             <div class="device-result">
                                 <p>Результат</p>
                                 <ul>
@@ -81,11 +102,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- Проєкт -->
                 <div class="project-data"></div>
+                <!-- Процес підключення -->
                 <div class="connection-process"></div>
+                <!-- Налаштування -->
                 <div class="settings"></div>
-            </main></main>
+            </main>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
