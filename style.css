@@ -81,7 +81,7 @@
     border-radius: 50%;
     height: 35px;
     width: 35px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .device-panel-list button:hover {
@@ -93,10 +93,62 @@
     gap: 20px;
 }
 
+.selected-devices p {
+    color:black;
+}
+
 .device {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     background-color: white;
-    border-radius: 8%;
-    height: 20vh;
-    width: 15vw;
+    border-radius: 25px;
+    height: 15.5vh;
+    width: 11.5vw;
     margin-top: 20px;
+}
+
+.device-name {
+    padding-left: 15px;
+}
+
+.device-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.device-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.device-details li{
+    display: flex;
+    gap: 5px;
+}
+
+.device-details button {
+    background-color: rgb(214, 214, 214);
+    color: black;
+    border-style: none;
+    border-radius: 30%;
+    height: 20px;
+    width: 20px;
+}
+
+.device-details button:hover {
+    background-color: rgb(223, 222, 222);
+}
+
+.device-result {
+    padding-left: 15px;
+}
+
+.device-result li {
+    display: flex;
+    gap: 5px;
 }
