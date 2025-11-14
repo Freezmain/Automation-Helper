@@ -88,6 +88,15 @@
     background-color: rgb(223, 222, 222);
 }
 
+.shadow-background {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .selected-devices {
     display: flex;
     gap: 20px;
@@ -105,17 +114,13 @@
     background-color: white;
     border-radius: 25px;
     height: 15.5vh;
-    width: 11.5vw;
+    width: 13vw;
     margin-top: 20px;
-}
-
-.device-name {
     padding-left: 15px;
 }
 
 .device-info {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -142,10 +147,6 @@
 
 .device-details button:hover {
     background-color: rgb(223, 222, 222);
-}
-
-.device-result {
-    padding-left: 15px;
 }
 
 .device-result li {

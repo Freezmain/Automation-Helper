@@ -9,12 +9,12 @@
 <body>
     <div class="container">
         <aside class="sidebar">
-            <div class="sidebar-content"><a href="#" class="sidebar-header">Elements</a>
+            <div class="sidebar-content"><a href="#" class="sidebar-header">Елементи</a>
                 <ul>
-                    <li><a href="#">Calculation Modules</a></li>
-                    <li><a href="#">Project Data</a></li>
-                    <li><a href="#">Connection Process</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Розрахунок модулів</a></li>
+                    <li><a href="#">Проєкт</a></li>
+                    <li><a href="#">Процес підключення</a></li>
+                    <li><a href="#">Налаштування</a></li>
                 </ul>
             </div>
         </aside>
@@ -30,33 +30,49 @@
                             <li><button class="switch">S</button></li>
                         </ul>
                     </div>
+                    <div class="modal-windows">
+                        <div class="modal-window-light" style="display: none;">
+                            <div>
+                                <p>Освітлення:</p>
+                                <a href="#">Оберіть тип освітлення</a>
+                            </div>
+                            <ul>
+                                <li>Лампа</li>
+                                <li>Торшер</li>
+                                <li>Бра</li>
+                                <li>Трековий світильник</li>
+                                <li>LED</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shadow-background" style="display: none;"></div>
                     <div class="selected-devices">
                         <div class="device">
-                            <p class="device-name">Lamp</p>
+                            <p class="device-name">Лампа</p>
                             <div class="device-info">
                                 <img class="device-img" src="img/lamp.png">
                                 <ul class="device-details">
                                     <li>
-                                        <p>Count:</p>
+                                        <p>Кількість:</p>
                                         <button class="device-button-minus">-</button>
                                         <p>5</p>
                                         <button class="device-button-plus">+</button>
                                     </li>
                                     <li>
-                                        <p>Output type:</p>
+                                        <p>Тип виходів:</p>
                                         <p>DO</p>
                                     </li>
                                     <li>
-                                        <p>Count outputs:</p>
+                                        <p>К-сть виходів:</p>
                                         <p>1</p>
                                     </li>
                                 </ul>
                             </div>
                             <div class="device-result">
-                                <p>Result</p>
+                                <p>Результат</p>
                                 <ul>
                                     <li>
-                                        <p>Need outputs: </p>
+                                        <p>Необхідна к-сть виходів: </p>
                                         <p>5</p>
                                         <p>DO</p>
                                     </li>
