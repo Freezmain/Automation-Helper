@@ -52,11 +52,23 @@
                                     <option>LED</option>
                                 </select>
                             </div>
-                            <div class="modal-light-parameters">
-                                <p>К-сть виходів:</p>
-                                <button id="button-counting-minus-modal-light" class="button-counting">-</button>
-                                <p id="modal-light-count-outputs">1</p>
-                                <button id="button-counting-plus-modal-light" class="button-counting">+</button>
+                            <div class="display-flex">
+                                <div class="modal-light-names">
+                                    <p>К-сть освітлення:</p>
+                                    <p>К-сть виходів:</p>
+                                </div>
+                                <div class="modal-light-outputs">
+                                    <div class="display-flex">
+                                        <button id="button-counting-minus-modal-light-elements" class="button-counting">-</button>
+                                        <p id="modal-light-count-elements">1</p>
+                                        <button id="button-counting-plus-modal-light-elements" class="button-counting">+</button>
+                                    </div>
+                                    <div class="display-flex">
+                                        <button id="button-counting-minus-modal-light-outputs" class="button-counting">-</button>
+                                        <p id="modal-light-count-outputs">1</p>
+                                        <button id="button-counting-plus-modal-light-outputs" class="button-counting">+</button>
+                                    </div>
+                                </div>
                             </div>
                             <button id="button-create-modal-light" class="button-create">Створити</button>
                         </div>
@@ -67,37 +79,39 @@
                     <div id="selected-devices" class="selected-devices">
                         <!-- Екземпляр елемента -->
                         <div class="device">
-                            <p class="device-name">Лампа</p>
-                            <!-- Основна інформація -->
-                            <div class="device-info">
-                                <img class="device-img" src="img/lamp.png">
-                                <ul class="device-details">
-                                    <li>
-                                        <p>Кількість:</p>
-                                        <button class="button-counting">-</button>
-                                        <p>5</p>
-                                        <button class="button-counting">+</button>
-                                    </li>
-                                    <li>
-                                        <p>Тип виходів:</p>
-                                        <p>DO</p>
-                                    </li>
-                                    <li>
-                                        <p>К-сть виходів:</p>
-                                        <p>1</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Результуюча інформація -->
-                            <div class="device-result">
-                                <p>Результат</p>
-                                <ul>
-                                    <li>
-                                        <p>Необхідна к-сть виходів: </p>
-                                        <p>5</p>
-                                        <p>DO</p>
-                                    </li>
-                                </ul>
+                            <div>
+                                <p class="device-name">Лампа</p>
+                                <!-- Основна інформація -->
+                                <div class="device-info">
+                                    <img class="device-img" src="img/lamp.png">
+                                    <ul class="device-details">
+                                        <li>
+                                            <p>Кількість:</p>
+                                            <button class="button-counting">-</button>
+                                            <p>5</p>
+                                            <button class="button-counting">+</button>
+                                        </li>
+                                        <li>
+                                            <p>Тип виходів:</p>
+                                            <p>DO</p>
+                                        </li>
+                                        <li>
+                                            <p>К-сть виходів:</p>
+                                            <p>1</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Результуюча інформація -->
+                                <div class="device-result">
+                                    <p>Результат</p>
+                                    <ul>    
+                                        <li>
+                                            <p>Необхідна к-сть виходів: </p>
+                                            <p>5</p>
+                                            <p>DO</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
